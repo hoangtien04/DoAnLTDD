@@ -27,7 +27,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.doanmonhoc.ui.theme.DoAnMonHocTheme
+import com.example.doanltdd.R
 
 data class Product(
     val imageResId: Int,
@@ -40,10 +40,10 @@ data class Product(
 @Composable
 fun FullScreenProductList() {
     val productList = listOf(
-        Product(R.drawable.product_image_1, "Áo len nam", "Thời trang thu đông"),
-        Product(R.drawable.product_image_2, "Áo hoodie", "Phong cách trẻ trung"),
-        Product(R.drawable.product_image_3, "Áo khoác dạ", "Thời thượng và ấm áp"),
-        Product(R.drawable.product_image_4, "Áo sơ mi", "Lịch sự, sang trọng")
+        Product(R.drawable.a1b33e32e8301949b5b770865289c90b, "Áo len nam", "Thời trang thu đông"),
+        Product(R.drawable.a1b33e32e8301949b5b770865289c90b, "Áo hoodie", "Phong cách trẻ trung"),
+        Product(R.drawable.a1b33e32e8301949b5b770865289c90b, "Áo khoác dạ", "Thời thượng và ấm áp"),
+        Product(R.drawable.a1b33e32e8301949b5b770865289c90b, "Áo sơ mi", "Lịch sự, sang trọng")
     )
 
     val pagerState = rememberPagerState { productList.size }
